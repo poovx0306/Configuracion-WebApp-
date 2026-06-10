@@ -1,38 +1,30 @@
+$def with (numero1, numero2, resultado)
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>Calculadora</title>
+    <meta name="viewport" content="width=device-width">
+    <meta charset="ISO-8859-1">
+  </head>
+  <body>
+    <h1>Calculadora</h1>
 
-    <head>
+    <form method="POST">
+      <label>Número 1:</label><br>
+      <input type="number" name="numero1" placeholder="Número 1" value=$numero1><br>
 
-        <title>Calculadora</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta charset="ISO-8859-1">
+      <label>Número 2:</label><br>
+      <input type="number" name="numero2" placeholder="Número 2" value=$numero2><br>
 
-    </head>
+      <label>Resultado:</label><br>
+      <input type="number" name="resultado" placeholder="RESULTADO" value=$resultado><br>
 
-    <body>
-        
-        <h1>Calculadora</h1>
+      <button name="operacion" id="operacion" valuer="sumar">Sumar</button>
+      
+      <button name="operacion" id="operacion"`value="restar">Restar</button>
 
+    </form>
 
-        <form method="POST">
-
-            <label>Número 1:</label><br>
-            <input type="number" placeholder="Emmatonto" name="numero1" id="numero1"><br>
-                
-            <label>Número 2:</label><br>
-            <input type="number" placeholder="Poveguapo" name="numero2" id="numero2"><br>
-                
-            <label>Resultado:</label><br>
-            <input type="number" placeholder="RESULTADO" name="resultado" id="resultado"><br>
-
-            <button name="suma" id="suma">Sumar</button><br>
-        </form>
-
-    
-
-        <a href="/">Index</a>
-    </body>
-
-
+    <a href="/">Index</a>
+  </body>
 </html>
-
